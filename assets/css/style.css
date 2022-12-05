@@ -10,11 +10,6 @@
     --content-font: 'Open Sans', sans-serif;
 }
 
-h1 {
-    background-color: var(--body-color);
-    font-family: var(--heading-font);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -29,4 +24,123 @@ section {
 
 .container {
     max-width: 1500px;
+}
+
+/* .navbar {
+    background-color: wheat;
+} */
+
+.navbar .nav-wrapper {
+    /* background-color: pink; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 30px;
+}
+
+.nav-wrapper .menu-hamburger {
+    display: none;
+}
+
+.nav-wrapper .logo {
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+.nav-wrapper .logo span {
+    color: var(--second-color);
+}
+
+.nav-wrapper .menu-wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-wrapper .menu-wrapper .menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    /* background-color: aqua; */
+}
+
+.menu-wrapper .menu .menu-link {
+    color: var(--second-color);
+    font-size: 1rem;
+    font-family: var(--content-font);
+    font-weight: 400;
+}
+
+.menu-wrapper .menu .menu-link.active {
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+@media screen and (max-width:960px) {
+    .navbar .nav-wrapper {
+        padding: 0px 30px;
+    }
+
+    .nav-wrapper .menu-wrapper .menu {
+        gap: 25px;
+    }
+
+    .menu-wrapper .menu .menu-link {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .nav-wrapper .menu-wrapper {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        display: block;
+        text-align: center;
+        background-color: var(--main-color);
+        border-radius: 20px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: 0.5s ease-in-out;
+    }
+
+    .nav-wrapper .menu-wrapper.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transition: 0.5s ease-in-out;
+    }
+
+    .nav-wrapper .menu-wrapper .menu {
+        display: block;
+    }
+
+    .nav-wrapper .menu-hamburger {
+        display: initial;
+        font-size: 2.5rem;
+        color: var(--second-color);
+        transition: 0.5s;
+    }
+
+    .menu-hamburger.bx-x {
+        transform: rotate(360deg);
+        transition: 0.5s;
+        font-size: 3rem;
+    }
+
+    .menu-wrapper .menu .menu-item {
+        margin: 25px 0px;
+    }
+
+    .menu .menu-item .menu-link {
+        color: white;
+        font-size: 1.125rem;
+    }
+
+    .menu .menu-item .menu-link.active {
+        color: var(--second-color);
+    }
+
 }
