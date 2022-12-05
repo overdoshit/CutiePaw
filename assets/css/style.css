@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap');
+
+:root {
+    --main-color: #FFDC26;
+    --second-color: #141413;
+    --body-color: #FFFFFF;
+
+    --heading-font: 'Fredoka One', cursive;
+    --content-font: 'Open Sans', sans-serif;
+}
+
+h1 {
+    background-color: var(--body-color);
+    font-family: var(--heading-font);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+section {
+    margin-top: 200px;
+}
+
+.container {
+    max-width: 1500px;
+}
