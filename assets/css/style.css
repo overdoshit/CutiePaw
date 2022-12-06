@@ -28,18 +28,13 @@ section {
 
 /* Navbar Start */
 
-/* .navbar {
-    background-color: wheat;
-} */
-
 .navbar .nav-wrapper {
-    /* background-color: pink; */
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    padding: 0 30px;
+    padding: 0 25px;
 }
 
 .nav-wrapper .menu-hamburger {
@@ -65,8 +60,7 @@ section {
 .nav-wrapper .menu-wrapper .menu {
     display: flex;
     align-items: center;
-    gap: 50px;
-    /* background-color: aqua; */
+    gap: 35px;
 }
 
 .menu-wrapper .menu .menu-link {
@@ -87,7 +81,8 @@ section {
 /* Home Start */
 
 .home {
-    margin-top: 100px;
+    /* margin-top: 30px; */
+    margin: 50px 80px;
 }
 
 .home .home-wrapper {
@@ -95,18 +90,17 @@ section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 
 .home .home-wrapper .heading {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-family: var(--heading-font);
     font-weight: 400;
     color: var(--main-color);
 }
 
 .home .home-wrapper .subheading {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-family: var(--content-font);
     font-weight: 400;
     color: var(--second-color);
@@ -117,11 +111,14 @@ section {
 
 .home-wrapper .content-left {
     flex: 0 0 50%;
-    margin-top: -80px;
+    margin-top: -70px;
+    /* background-color: coral; */
 }
 
 .content-left .img-wrapper {
-    max-width: 540px;
+    max-width: 400px;
+    /* background-color: bisque; */
+    margin: auto;
 }
 
 .content-left .img-wrapper img {
@@ -133,12 +130,16 @@ section {
     margin-top: 100px;
 }
 
+/* Home End */
 
 
+/* Address Start  */
 
+.address {
+    margin: 50px 80px;
+}
 
-
-.home .address-wrapper {
+.address .address-wrapper {
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -147,14 +148,14 @@ section {
 
 .address-wrapper .content-left {
     flex: 0 0 50%;
+    margin: auto;
 }
 
 .address-wrapper .content-left .heading {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-family: var(--heading-font);
     font-weight: 400;
     color: var(--main-color);
-    margin-top: 70px;
 }
 
 .address-wrapper .content-left .heading span {
@@ -162,37 +163,99 @@ section {
 }
 
 .address-wrapper .content-left iframe {
-    margin-top: 30px;
+    margin: 20px 0 0 20px;
 }
 
 .address-wrapper .content-right .subheading {
-    margin-top: 170px;
+    margin-top: 30px;
 }
 
 .address-wrapper .content-right .subheading ul li {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-family: var(--content-font);
     font-weight: 400;
     color: var(--second-color);
     text-align: justify;
-    max-width: 800px;
+    max-width: 430px;
     margin: 10px 0;
 }
 
 .address-wrapper .content-right {
     flex: 0 0 50%;
+    padding-top: 60px;
 }
 
 .address-wrapper .content-right .img-wrapper {
-    max-width: 800px;
+    max-width: 600px;
+    margin: auto;
 }
 
 .address-wrapper .content-right .img-wrapper img {
     width: 100%;
-    margin-top: 15px;
 }
 
-/* Home End */
+/* Address End  */
+
+
+/* Service Start  */
+
+.service {
+    margin: 50px 80px;
+    /* background-color: bisque; */
+}
+
+.service .service-wrapper {
+    margin: auto;
+    text-align: center;
+    /* background-color: coral; */
+}
+
+.service-wrapper .heading {
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.service-wrapper .subheading {
+    font-size: 1rem;
+    font-family: var(--content-font);
+    font-weight: 400;
+    color: var(--second-color);
+    margin: 10px 0;
+}
+
+.service-wrapper .img-wrapper {
+    max-width: 800px;
+    margin: auto;
+}
+
+.service-wrapper .img-wrapper img {
+    width: 100%;
+}
+
+.service-wrapper .heading2 {
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: var(--second-color);
+    margin-top: 10px;
+}
+
+.service-wrapper .img-wrapper2 {
+    max-width: 800px;
+    margin: auto;
+}
+
+.service-wrapper .img-wrapper2 img {
+    margin-top: 25px;
+    width: 100%;
+}
+
+/* Service End */
+
+
+/* Responsive Start */
 
 @media screen and (max-width:960px) {
     .navbar .nav-wrapper {
@@ -259,3 +322,5 @@ section {
     }
 
 }
+
+/* Responsive End */
