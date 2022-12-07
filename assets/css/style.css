@@ -112,12 +112,10 @@ section {
 .home-wrapper .content-left {
     flex: 0 0 50%;
     margin-top: -70px;
-    /* background-color: coral; */
 }
 
 .content-left .img-wrapper {
     max-width: 400px;
-    /* background-color: bisque; */
     margin: auto;
 }
 
@@ -152,7 +150,7 @@ section {
 }
 
 .address-wrapper .content-left .heading {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-family: var(--heading-font);
     font-weight: 400;
     color: var(--main-color);
@@ -224,7 +222,6 @@ section {
     margin: 10px 0;
 }
 
-
 .option-wrapper .option-service {
     max-width: 800px;
     display: flex;
@@ -245,14 +242,16 @@ section {
     font-size: 4rem;
     color: var(--main-color);
     box-shadow: 0px 3.25517px 65.1034px rgba(0, 0, 0, 0.07), 0px 1.18819px 23.7638px rgba(0, 0, 0, 0.0482987), 0px 0.576845px 11.5369px rgba(0, 0, 0, 0.0389404), 0px 0.28278px 5.6556px rgba(0, 0, 0, 0.0310596), 0px 0.111812px 2.23623px rgba(0, 0, 0, 0.0217013);
-    transition: 0.4s ease-in-out;
 }
 
 .option-service .btn-service i:hover {
     background-color: var(--main-color);
     color: var(--body-color);
     cursor: pointer;
-    transition: 0.4s ease-in-out;
+}
+
+.option-service .btn-service i:active {
+    transform: translateY(4px);
 }
 
 .btn-service .service-link {
@@ -323,6 +322,11 @@ section {
     font-size: 3rem;
     color: var(--main-color);
     cursor: pointer;
+    margin-top: 30px;
+}
+
+.row1 .slider i:active {
+    transform: translateY(4px);
 }
 
 .review-wrapper .row2 {
@@ -408,6 +412,165 @@ section {
 }
 
 /* Review End */
+
+
+/* Newsletter Start */
+
+.newsletter {
+    margin: 50px 80px;
+}
+
+.newsletter .newsletter-wrapper {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.newsletter-wrapper .title {
+    font-size: 1.25rem;
+    font-family: var(--content-font);
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+.newsletter-wrapper .heading {
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.newsletter-wrapper .subheading {
+    font-size: 1rem;
+    font-family: var(--content-font);
+    font-weight: 400;
+    color: var(--second-color);
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+.newsletter-wrapper .form {
+    margin: 0 290px;
+    padding: 10px;
+    /* background-color: coral; */
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
+
+}
+
+.form input {
+    border: none;
+    margin-right: 10px;
+    width: 400px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-family: var(--content-font);
+    font-weight: 400;
+    color: black;
+}
+
+.form input:focus {
+    font-size: 1.2rem;
+    font-family: var(--content-font);
+    font-weight: 400;
+    color: black;
+    outline: none;
+}
+
+.form .btn-berlangganan {
+    background-color: var(--main-color);
+    color: black;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.form .btn-berlangganan:active {
+    transform: translateY(4px);
+}
+
+/* Newsletter End */
+
+
+/* Footer Start */
+
+.footer {
+    margin-top: 100px;
+    background-color: var(--main-color);
+}
+
+.footer .footer-wrapper {
+    margin: 0 80px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.col-1-footer .logo-footer {
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: white;
+}
+
+.logo-footer span {
+    color: black;
+}
+
+.sosmed-icon i {
+    font-size: 2.5rem;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 10px 5px 0px 5px;
+}
+
+.col-1-footer .copyright {
+    margin: 20px 0;
+    font-size: 1rem;
+    font-family: var(--content-font);
+    font-weight: 400;
+    color: black;
+}
+
+.copyright span {
+    color: red;
+}
+
+.col-2-footer h3,
+.col-3-footer h3 {
+    font-size: 1.5rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: black;
+}
+
+.col-2-footer ul,
+.col-3-footer ul {
+    margin: 20px 0;
+}
+
+.col-2-footer ul li,
+.col-3-footer ul li {
+    margin-top: 10px;
+}
+
+.col-2-footer li a,
+.col-3-footer li a {
+    font-size: 1rem;
+    font-family: var(--content-font);
+    font-weight: 400;
+    color: black;
+}
+
+/* Footer End */
 
 
 /* Responsive Start */
