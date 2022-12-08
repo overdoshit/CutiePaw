@@ -171,7 +171,7 @@ section {
 }
 
 .address-wrapper .content-right .subheading {
-    margin-top: 60px;
+    margin-top: 70px;
 }
 
 .address-wrapper .content-right .subheading ul li {
@@ -181,7 +181,7 @@ section {
     color: var(--second-color);
     text-align: justify;
     max-width: 600px;
-    margin: 5px 20px;
+    margin: 10px 20px;
 }
 
 .address-wrapper .content-right .img-wrapper {
@@ -538,6 +538,16 @@ section {
     margin: 10px 5px 0px 5px;
 }
 
+.sosmed-icon i:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.sosmed-icon i:active {
+    transform: translateY(4px);
+}
+
 .col-1-footer .copyright {
     margin: 20px 0;
     font-size: 1rem;
@@ -557,6 +567,7 @@ section {
     font-family: var(--heading-font);
     font-weight: 400;
     color: black;
+    margin-top: 20px;
 }
 
 .col-2-footer ul,
@@ -603,7 +614,6 @@ section {
 
     .address-wrapper .content-right .subheading ul li {
         font-size: 0.9rem;
-        margin: 5px 20px;
     }
 
     .address-wrapper .content-right .img-wrapper {
@@ -643,9 +653,13 @@ section {
         height: 450px;
     }
 
+    .address-wrapper .content-right .subheading {
+        margin-top: 30px;
+    }
+
     .address-wrapper .content-right .subheading ul li {
         font-size: 1rem;
-        margin: 0;
+        margin-top: 10px;
     }
 
     .option-service .btn-service i {
@@ -748,7 +762,7 @@ section {
     .form input {
         margin-right: 0px;
         font-size: 1rem;
-        width: 80%;
+        width: 90%;
     }
 
     .form input:focus {
@@ -757,8 +771,18 @@ section {
 
     .col-1-footer .copyright {
         font-size: 0.8rem;
+        max-width: 300px;
     }
 
+    .col-2-footer h3,
+    .col-3-footer h3 {
+        font-size: 1.2rem;
+    }
+
+    .col-2-footer li a,
+    .col-3-footer li a {
+        font-size: 0.9rem;
+    }
 }
 
 @media screen and (max-width:520px) {
@@ -794,11 +818,25 @@ section {
         max-width: 350px;
     }
 
+    .col-1-footer .copyright {
+        font-size: 0.7rem;
+        max-width: 200px;
+    }
+
+    .col-2-footer h3,
+    .col-3-footer h3 {
+        font-size: 1rem;
+    }
+
+    .col-2-footer li a,
+    .col-3-footer li a {
+        font-size: 0.8rem;
+    }
 }
 
 @media screen and (max-width:440px) {
     .menu-wrapper .menu .menu-item {
-        margin: 15px 0px;
+        margin: 18px 0px;
     }
 
     .menu .menu-item .menu-link {
@@ -840,6 +878,20 @@ section {
         font-size: 4rem;
     }
 
+    .col-1-footer .copyright {
+        font-size: 0.65rem;
+        max-width: 200px;
+    }
+
+    .col-2-footer h3,
+    .col-3-footer h3 {
+        font-size: 0.95rem;
+    }
+
+    .col-2-footer li a,
+    .col-3-footer li a {
+        font-size: 0.75rem;
+    }
 }
 
 /* Responsive End */
