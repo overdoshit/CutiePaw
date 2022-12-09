@@ -163,6 +163,7 @@ section {
     margin: 20px 0 0 20px;
     width: 450px;
     height: 400px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
 }
 
 .address-wrapper .content-right {
@@ -473,6 +474,7 @@ section {
     font-family: var(--content-font);
     font-weight: 400;
     color: black;
+    text-align: center;
 }
 
 .form input:focus {
