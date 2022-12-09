@@ -32,3 +32,12 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".bxs-chevron-left-circle",
     },
 });
+
+flatpickr("input[class=datetime]", {
+    enableTime: true,
+    dateFormat: "Y-m-d h:i",
+    altInput: true,
+    altFormat: "D j M, Y (h:i K)",
+    disableMobile: "true",
+    theme: "material_blue",
+});

@@ -1,0 +1,407 @@
+section {
+    margin-top: 50px;
+}
+
+/* Clinic Start */
+
+.clinic .clinic-wrapper {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.clinic-wrapper .title {
+    font-size: 1.25rem;
+    font-family: var(--content-font);
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+.clinic-wrapper .heading {
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.clinic-wrapper .row {
+    background-color: var(--body-color);
+    display: flex;
+    margin: auto;
+}
+
+.clinic-wrapper .box-clinic {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin: auto;
+    max-width: 360px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.400);
+}
+
+.box-clinic i {
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.400);
+}
+
+.box-clinic .bx-pulse {
+    color: #27AE60;
+    background-color: #A6FFDF;
+}
+
+.box-clinic .bx-injection {
+    color: #499AFF;
+    background-color: #AEFFFF;
+}
+
+.box-clinic .bx-dna {
+    color: #9F79E8;
+    background-color: #FFDEFF;
+}
+
+.box-clinic h4 {
+    font-size: 1.5rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: black;
+    margin: 10px 0;
+}
+
+.box-clinic p {
+    font-size: 1rem;
+    font-family: var(--content-font);
+    font-weight: 400;
+    color: black;
+    margin: 0 15px 10px 15px;
+}
+
+.box-clinic a {
+    background-color: var(--main-color);
+    color: black;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.box-clinic a:hover {
+    background-color: #E6C30D;
+    transition: 0.3s ease-in-out;
+}
+
+.box-clinic a img {
+    margin: 0 5px -6px 5px;
+}
+
+.clinic-wrapper .box-reservasi {
+    background-color: #3A8EF6;
+    margin: auto;
+    width: 65%;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
+}
+
+.box-reservasi h3 {
+    font-size: 1.7rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: white;
+}
+
+.box-reservasi p {
+    font-size: 1rem;
+    font-family: var(--content-font);
+    font-weight: 400;
+    color: white;
+}
+
+.box-reservasi .datetime {
+    background-color: #3A8EF6;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 20px;
+    border-radius: 25px;
+    width: 270px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.box-reservasi .datetime::placeholder {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+}
+
+.box-reservasi .datetime:hover {
+    color: #E6E6E6;
+    border-color: #E6E6E6;
+    transition: 0.3s ease-in-out;
+}
+
+.box-reservasi .datetime:active {
+    transform: translateY(4px);
+}
+
+.box-reservasi .reservasi {
+    background-color: white;
+    color: #3A8EF6;
+    border: 2px solid white;
+    padding: 15px 20px;
+    border-radius: 25px;
+    width: 150px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.box-reservasi .reservasi:hover {
+    background-color: #E6E6E6;
+    border-color: #E6E6E6;
+    transition: 0.3s ease-in-out;
+}
+
+.box-reservasi .reservasi:active {
+    transform: translateY(4px);
+}
+
+/* Clinic End */
+
+
+/* Responsive Start */
+
+@media screen and (max-width:1100px) {
+    .navbar .nav-wrapper {
+        padding: 0px 30px;
+    }
+
+    .nav-wrapper .menu-wrapper .menu {
+        gap: 15px;
+    }
+
+    .clinic-wrapper .box-clinic {
+        padding: 20px 10px;
+        max-width: 300px;
+    }
+
+    .box-clinic p {
+        font-size: 0.8rem;
+        margin: 0 10px 10px 10px;
+    }
+
+    .box-reservasi p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .navbar .nav-wrapper {
+        padding: 0px 30px;
+    }
+
+    .nav-wrapper .menu-wrapper .menu {
+        gap: 15px;
+    }
+
+    .menu-wrapper .menu .menu-link {
+        font-size: 0.75rem;
+    }
+
+    .clinic-wrapper .box-clinic {
+        padding: 20px 10px;
+        max-width: 250px;
+    }
+
+    .box-clinic h4 {
+        font-size: 1.2rem;
+    }
+
+    .box-clinic p {
+        font-size: 0.7rem;
+        margin: 0 5px 10px 5px;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .nav-wrapper .menu-wrapper {
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        display: block;
+        text-align: center;
+        background-color: var(--main-color);
+        border-radius: 20px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: 0.5s ease-in-out;
+    }
+
+    .nav-wrapper .menu-wrapper.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transition: 0.5s ease-in-out;
+    }
+
+    .nav-wrapper .menu-wrapper .menu {
+        display: block;
+        margin: auto;
+    }
+
+    .nav-wrapper .menu-hamburger {
+        display: initial;
+        font-size: 2.5rem;
+        color: var(--second-color);
+        transition: 0.5s;
+    }
+
+    .menu-hamburger.bx-x {
+        transform: rotate(360deg);
+        transition: 0.5s;
+        font-size: 3rem;
+    }
+
+    .menu-wrapper .menu .menu-item {
+        margin: 25px 0px;
+    }
+
+    .menu .menu-item .menu-link {
+        color: white;
+        font-size: 1.125rem;
+    }
+
+    .menu .menu-item .menu-link.active {
+        color: var(--second-color);
+    }
+
+    .clinic-wrapper .row {
+        display: block;
+    }
+
+    .clinic-wrapper .box-clinic {
+        margin-top: 20px;
+    }
+
+    .box-reservasi .reservasi {
+        margin-top: 10px;
+    }
+
+    .col-1-footer .copyright {
+        font-size: 0.8rem;
+        max-width: 300px;
+    }
+
+    .col-2-footer h3,
+    .col-3-footer h3 {
+        font-size: 1.2rem;
+    }
+
+    .col-2-footer li a,
+    .col-3-footer li a {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:520px) {
+
+    .menu .menu-item .menu-link {
+        font-size: 0.8rem;
+    }
+
+    .box-reservasi h3 {
+        font-size: 1.5rem;
+    }
+
+    .box-reservasi p {
+        font-size: 0.75rem;
+    }
+
+    .box-reservasi .datetime {
+        padding: 15px 15px;
+        width: 230px;
+        font-size: 0.9rem;
+    }
+
+    .box-reservasi .datetime::placeholder {
+        font-size: 0.9rem;
+    }
+
+    .box-reservasi .reservasi {
+        font-size: 0.9rem;
+    }
+
+    .col-1-footer .copyright {
+        font-size: 0.7rem;
+        max-width: 200px;
+    }
+
+    .col-2-footer h3,
+    .col-3-footer h3 {
+        font-size: 1rem;
+    }
+
+    .col-2-footer li a,
+    .col-3-footer li a {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .menu-wrapper .menu .menu-item {
+        margin: 18px 0px;
+    }
+
+    .menu .menu-item .menu-link {
+        font-size: 0.7rem;
+    }
+
+    .box-reservasi h3 {
+        font-size: 1.2rem;
+    }
+
+    .box-reservasi p {
+        font-size: 0.7rem;
+    }
+
+    .box-reservasi .datetime {
+        padding: 15px 10px;
+        width: 190px;
+        font-size: 0.75rem;
+    }
+
+    .box-reservasi .datetime::placeholder {
+        font-size: 0.75rem;
+    }
+
+    .col-1-footer .copyright {
+        font-size: 0.65rem;
+        max-width: 200px;
+    }
+
+    .col-2-footer h3,
+    .col-3-footer h3 {
+        font-size: 0.95rem;
+    }
+
+    .col-2-footer li a,
+    .col-3-footer li a {
+        font-size: 0.75rem;
+    }
+}
+
+/* Responsive End */

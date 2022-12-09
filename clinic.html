@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/clinic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <title>CutiePaw - Pet Shop</title>
@@ -30,6 +33,46 @@
             </div>
         </nav>
     </header>
+
+    <section class="clinic" id="clinic">
+        <div class="container clinic-wrapper">
+            <h3 class="title">Our Services</h3>
+            <h2 class="heading">What you need ?</h2><br></br>
+
+            <div class="row">
+                <div class="box-clinic">
+                    <i class='bx bx-pulse'></i>
+                    <h4>Medical Check Up</h4>
+                    <p>Pemeriksaan berkala mengenai kesehatan hewan kesayangan anda.</p><br>
+                    <a href="#box-reservasi">Cek Jadwal Dokter<img src="assets/image/calendar.png"
+                            alt="calendar"></a><br></br>
+                </div>
+                <div class="box-clinic">
+                    <i class='bx bx-injection'></i>
+                    <h4>Vaksin</h4>
+                    <p>Mencegah terjadinya kesakitan dan kematian pada hewan kesayangan anda.</p><br>
+                    <a href="#box-reservasi">Cek Jadwal Dokter<img src="assets/image/calendar.png"
+                            alt="calendar"></a><br></br>
+                </div>
+                <div class="box-clinic">
+                    <i class='bx bx-dna'></i>
+                    <h4>Steril</h4>
+                    <p>Proses sterilisasi terhadap hewan kesayangan anda.</p><br>
+                    <a href="#box-reservasi">Cek Jadwal Dokter<img src="assets/image/calendar.png"
+                            alt="calendar"></a><br></br>
+                </div>
+            </div>
+            <br></br>
+            <div class="box-reservasi" id="box-reservasi">
+                <h3>Reservasi Pelayanan Kami Sekarang</h3><br>
+                <p>Pet Clinic adalah bagian integral dari suatu organisasi sosial dan kesehatan dengan fungsi
+                    menyediakan pelayanan paripurna (komprehensif) terhadap hewan kesayangan.</p><br></br>
+                <input class="datetime" type="button" value="Pilih Jadwal" placeholder="Pilih Jadwal">
+                <input class="reservasi" type="button" value="Reservasi">
+            </div>
+
+        </div>
+    </section>
 
     <footer class="footer" id="footer">
         <div class="container footer-wrapper">
@@ -71,9 +114,12 @@
                     <li><a href="index.html#newsletter">Newsletter</a></li>
                 </ul>
             </div>
+
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
