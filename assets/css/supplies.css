@@ -16,7 +16,7 @@ img {
 .shop-container {
     max-width: 1068px;
     margin: auto;
-    width: 100%;
+    width: 90%;
 }
 
 .shop-container .title {
@@ -79,7 +79,7 @@ section {
     background: var(--bg-color);
     box-shadow: -2px 0 10px hsl(0 4% 15%/ 10%);
     transition: 0.3s;
-    z-index: 100;
+    z-index: 1;
     margin-top: 65px;
     border-radius: 20px;
 }

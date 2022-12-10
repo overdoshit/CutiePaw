@@ -2,29 +2,29 @@ section {
     margin-top: 50px;
 }
 
-/* Grooming Start */
+/* Hotel Start */
 
-.grooming .grooming-wrapper {
+.hotel .hotel-wrapper {
     margin: auto;
     align-items: center;
     text-align: center;
 }
 
-.grooming-wrapper .title {
+.hotel-wrapper .title {
     font-size: 1.25rem;
     font-family: var(--content-font);
     font-weight: 400;
     color: var(--main-color);
 }
 
-.grooming-wrapper .heading {
+.hotel-wrapper .heading {
     font-size: 2.5rem;
     font-family: var(--heading-font);
     font-weight: 400;
     color: var(--second-color);
 }
 
-.grooming-wrapper .form-title1 {
+.hotel-wrapper .form-title1 {
     margin-top: 100px;
     font-size: 2rem;
     font-family: var(--heading-font);
@@ -32,7 +32,7 @@ section {
     color: var(--main-color);
 }
 
-.grooming-wrapper .form-title1 span {
+.hotel-wrapper .form-title1 span {
     font-size: 2rem;
     font-family: var(--heading-font);
     font-weight: 400;
@@ -131,11 +131,11 @@ section {
     color: black;
 }
 
-.grooming-wrapper .grooming-form {
+.hotel-wrapper .hotel-form {
     margin-top: 200px;
 }
 
-.grooming-form h4 {
+.hotel-form h4 {
     margin-top: 30px;
     font-size: 2rem;
     font-family: var(--heading-font);
@@ -143,16 +143,16 @@ section {
     color: var(--main-color);
 }
 
-.grooming-form h4 span {
+.hotel-form h4 span {
     font-size: 2rem;
     font-family: var(--heading-font);
     font-weight: 400;
     color: var(--second-color);
 }
 
-.grooming-form input[type="text"],
-.grooming-form input[type="email"],
-.grooming-form input[type="datetime"] {
+.hotel-form input[type="text"],
+.hotel-form input[type="email"],
+.hotel-form input[type="datetime"] {
     margin-top: 5px;
     padding: 10px;
     width: 350px;
@@ -167,11 +167,11 @@ section {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.grooming-form #name {
+.hotel-form #name {
     text-transform: uppercase;
 }
 
-.grooming-form #name:placeholder-shown {
+.hotel-form #name:placeholder-shown {
     text-transform: none;
 }
 
@@ -214,7 +214,7 @@ section {
     overflow: hidden;
 }
 
-.grooming-form .booking {
+.hotel-form .booking {
     margin-top: 40px;
     background-color: var(--main-color);
     color: black;
@@ -230,13 +230,13 @@ section {
     transition: 0.3s ease-in-out;
 }
 
-.grooming-form .booking:hover {
+.hotel-form .booking:hover {
     background-color: #E6C30D;
     transition: 0.3s ease-in-out;
 }
 
-.grooming-form .booking:active {
+.hotel-form .booking:active {
     transform: translateY(4px);
 }
 
-/* Grooming End */
+/* Hotel End */

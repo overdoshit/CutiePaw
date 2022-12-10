@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/grooming.css">
+    <link rel="stylesheet" href="assets/css/hotel.css">
     <link rel="shortcut icon" href="assets/image/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css">
@@ -25,10 +25,10 @@
                     <ul class="menu">
                         <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
                         <li class="menu-item"><a href="clinic.html" class="menu-link">Pet Clinic</a></li>
-                        <li class="menu-item"><a href="grooming.html" class="menu-link active">Pet Grooming</a></li>
+                        <li class="menu-item"><a href="grooming.html" class="menu-link">Pet Grooming</a></li>
                         <li class="menu-item"><a href="supplies.html" class="menu-link">Pet Supplies</a></li>
                         <li class="menu-item"><a href="training.html" class="menu-link">Pet Training</a></li>
-                        <li class="menu-item"><a href="hotel.html" class="menu-link">Pet Hotel</a></li>
+                        <li class="menu-item"><a href="hotel.html" class="menu-link active">Pet Hotel</a></li>
                     </ul>
                 </div>
                 <div class="menu-hamburger bx bx-menu"></div>
@@ -36,8 +36,8 @@
         </nav>
     </header>
 
-    <section class="grooming" id="grooming">
-        <div class="container grooming-wrapper">
+    <section class="hotel" id="hotel">
+        <div class="container hotel-wrapper">
             <h3 class="title">Our Services</h3>
             <h2 class="heading">What you need ?</h2>
             <h4 class="form-title1">Animal <span>Type</span></h4><br></br>
@@ -59,7 +59,7 @@
                 </div>
             </section>
 
-            <form class="grooming-form">
+            <form class="hotel-form">
                 <h4>Name</h4>
                 <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required>
                 <h4>Phone <span>Number</span></h4>
@@ -69,18 +69,19 @@
                 <h4>Services</h4>
 
                 <div class="service">
-                    <input type="radio" id="cutiepaw" name="service" checked><label for="cutiepaw">GoTo
-                        CutiePaw</label><input type="radio" id="pickedup" name="service"><label
-                        for="pickedup">Picked-Up</label></label>
+                    <input type="radio" id="cargo" name="service" checked><label for="cargo">Cargo</label><input
+                        type="radio" id="room" name="service"><label for="room">Room</label></label>
                 </div>
 
                 <br>
-                <h4>Date <span>Time</span></h4>
-                <input class="datetime" type="button" id="datetime" value="Select Date" placeholder="Select Date"
+                <h4>Check <span>IN</span></h4>
+                <input class="datetime" type="button" id="check-in" value="Select Date" placeholder="Select Date"
+                    required>
+                <h4>Check <span>OUT</span></h4>
+                <input class="datetime" type="button" id="check-out" value="Select Date" placeholder="Select Date"
                     required>
                 <br>
-                <input type="submit" class="booking" id="booking" value="Booking"
-                    onclick="alert('Pet Grooming Booked')">
+                <input type="submit" class="booking" id="booking" value="Booking" onclick="alert('Pet Hotel Booked')">
             </form>
         </div>
     </section>
