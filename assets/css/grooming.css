@@ -24,15 +24,15 @@ section {
     color: var(--second-color);
 }
 
-.grooming-wrapper .form1 {
-    margin-top: 130px;
+.grooming-wrapper .form-title1 {
+    margin-top: 100px;
     font-size: 2rem;
     font-family: var(--heading-font);
     font-weight: 400;
     color: var(--main-color);
 }
 
-.grooming-wrapper .form1 span {
+.grooming-wrapper .form-title1 span {
     font-size: 2rem;
     font-family: var(--heading-font);
     font-weight: 400;
@@ -41,16 +41,15 @@ section {
 
 .animaltype {
     width: 100vmin;
-    height: 100vh;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    margin-top: 80px;
 }
 
 .tile {
@@ -59,7 +58,7 @@ section {
     position: relative;
 }
 
-input[type="checkbox"] {
+.tile input[type="checkbox"] {
     -webkit-appearance: none;
     position: relative;
     height: 100%;
@@ -72,7 +71,7 @@ input[type="checkbox"] {
     box-shadow: 15px 15px 25px rgba(2, 28, 53, 0.05);
 }
 
-input[type="checkbox"]:after {
+.tile input[type="checkbox"]:after {
     position: absolute;
     font-family: "Font Awesome 5 Free";
     font-weight: 400;
@@ -83,21 +82,21 @@ input[type="checkbox"]:after {
     color: #e2e6f3;
 }
 
-input[type="checkbox"]:hover {
+.tile input[type="checkbox"]:hover {
     transform: scale(1.08);
 }
 
-input[type="checkbox"]:checked {
+.tile input[type="checkbox"]:checked {
     border: 3px solid #478bfb;
 }
 
-input[type="checkbox"]:checked:after {
+.tile input[type="checkbox"]:checked:after {
     font-weight: 900;
     content: "\f058";
     color: #478bfb;
 }
 
-label {
+.tile label {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,12 +109,12 @@ label {
     cursor: pointer;
 }
 
-label .fa-solid {
+.tile label .fa-solid {
     font-size: 60px;
-    color: #2c2c51;
+    color: black;
 }
 
-input[type="checkbox"]:checked+label .fa-solid {
+.tile input[type="checkbox"]:checked+label .fa-solid {
     animation: grow 0.5s;
 }
 
@@ -125,9 +124,118 @@ input[type="checkbox"]:checked+label .fa-solid {
     }
 }
 
-label h6 {
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
+.tile label h6 {
+    font-size: 1rem;
+    font-family: var(--content-font);
     font-weight: 400;
-    color: #7b7b93;
+    color: black;
+}
+
+.grooming-wrapper .grooming-form {
+    margin-top: 200px;
+}
+
+.grooming-form h4 {
+    margin-top: 30px;
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+.grooming-form h4 span {
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.grooming-form input[type="text"],
+.grooming-form input[type="email"],
+.grooming-form input[type="datetime"] {
+    margin-top: 5px;
+    padding: 10px;
+    width: 350px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1rem;
+    font-family: var(--content-font);
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
+
+.grooming-form #name {
+    text-transform: uppercase;
+}
+
+.grooming-form #name:placeholder-shown {
+    text-transform: none;
+}
+
+.service {
+    margin: auto;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
+
+.service input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+}
+
+.service label {
+    font-size: 1rem;
+    font-family: var(--content-font);
+    font-weight: 700;
+    color: black;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 8px 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.service input[type=radio]:checked+label {
+    color: black;
+    background: #FFDC26;
+}
+
+.service label+input[type=radio]+label {
+    border-left: solid 3px #FFDC26;
+}
+
+.service {
+    border: solid 3px #FFDC26;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.grooming-form .booking {
+    margin-top: 40px;
+    background-color: var(--main-color);
+    color: black;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.grooming-form .booking:hover {
+    background-color: #E6C30D;
+    transition: 0.3s ease-in-out;
+}
+
+.grooming-form .booking:active {
+    transform: translateY(4px);
 }

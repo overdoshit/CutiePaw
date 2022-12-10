@@ -26,7 +26,7 @@
                         <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
                         <li class="menu-item"><a href="clinic.html" class="menu-link">Pet Clinic</a></li>
                         <li class="menu-item"><a href="grooming.html" class="menu-link active">Pet Grooming</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Pet Supplies</a></li>
+                        <li class="menu-item"><a href="supplies.html" class="menu-link">Pet Supplies</a></li>
                         <li class="menu-item"><a href="#" class="menu-link">Pet Training</a></li>
                         <li class="menu-item"><a href="#" class="menu-link">Pet Hotel</a></li>
                     </ul>
@@ -40,28 +40,49 @@
         <div class="container grooming-wrapper">
             <h3 class="title">Our Services</h3>
             <h2 class="heading">What you need ?</h2>
-            <h4 class="form1">Animal <span>Type</span></h4><br></br>
+            <h4 class="form-title1">Animal <span>Type</span></h4><br></br>
+
+            <section class="animaltype">
+                <div class="tile">
+                    <input type="checkbox" name="animal" id="animal1">
+                    <label for="animal1">
+                        <i class="fa-solid fa-cat"></i>
+                        <h6>Cat</h6>
+                    </label>
+                </div>
+                <div class="tile">
+                    <input type="checkbox" name="animal" id="animal2">
+                    <label for="animal2">
+                        <i class="fa-solid fa-dog"></i>
+                        <h6>Dog</h6>
+                    </label>
+                </div>
+            </section>
+
+            <form class="grooming-form">
+                <h4>Name</h4>
+                <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required>
+                <h4>Phone <span>Number</span></h4>
+                <input type="text" id="phone" name="phone" placeholder="Enter Your Number Phone" required>
+                <h4>E-mail <span>Address</span></h4>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
+                <h4>Services</h4>
+
+                <div class="service">
+                    <input type="radio" id="cutiepaw" name="service" checked><label for="cutiepaw">GoTo
+                        CutiePaw</label><input type="radio" id="pickedup" name="service"><label
+                        for="pickedup">Picked-Up</label></label>
+                </div>
+
+                <br>
+                <h4>Date <span>Time</span></h4>
+                <input class="datetime" type="button" value="Select Date" placeholder="Select Date" required>
+                <br>
+                <input type="submit" class="booking" id="booking" value="BOOKING"
+                    onclick="alert('Pet Grooming Booked')">
+            </form>
         </div>
     </section>
-
-    <section class="animaltype">
-        <div class="tile">
-            <input type="checkbox" name="animal" id="animal1">
-            <label for="animal1">
-                <i class="fa-solid fa-cat"></i>
-                <h6>Cat</h6>
-            </label>
-        </div>
-        <div class="tile">
-            <input type="checkbox" name="animal" id="animal2">
-            <label for="animal2">
-                <i class="fa-solid fa-dog"></i>
-                <h6>Dog</h6>
-            </label>
-        </div>
-    </section>
-
-    <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
     <footer class="footer" id="footer">
         <div class="container footer-wrapper">
