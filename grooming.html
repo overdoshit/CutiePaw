@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/clinic.css">
+    <link rel="stylesheet" href="assets/css/grooming.css">
     <link rel="shortcut icon" href="assets/image/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css">
@@ -23,9 +23,9 @@
                 <div class="menu-wrapper">
                     <ul class="menu">
                         <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
-                        <li class="menu-item"><a href="clinic.html" class="menu-link active">Pet Clinic</a></li>
-                        <li class="menu-item"><a href="grooming.html" class="menu-link">Pet Grooming</a></li>
-                        <li class="menu-item"><a href="supplies.html" class="menu-link">Pet Supplies</a></li>
+                        <li class="menu-item"><a href="clinic.html" class="menu-link">Pet Clinic</a></li>
+                        <li class="menu-item"><a href="grooming.html" class="menu-link active">Pet Grooming</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Pet Supplies</a></li>
                         <li class="menu-item"><a href="#" class="menu-link">Pet Training</a></li>
                         <li class="menu-item"><a href="#" class="menu-link">Pet Hotel</a></li>
                     </ul>
@@ -35,43 +35,29 @@
         </nav>
     </header>
 
-    <section class="clinic" id="clinic">
-        <div class="container clinic-wrapper">
-            <h3 class="title">Our Services</h3>
-            <h2 class="heading">What you need ?</h2><br></br>
+    <section class="grooming" id="grooming">
+        <div class="container grooming-wrapper">
+            <div class="content-left">
+                <div class="tile">
+                    <input type="checkbox" name="cat" id="cat">
+                    <label for="cat">
+                        <i class='bx bxs-cat'></i>
+                        <h6>Cat</h6>
+                    </label>
+                </div>
 
-            <div class="row">
-                <div class="box-clinic">
-                    <i class='bx bx-pulse'></i>
-                    <h4>Medical Check Up</h4>
-                    <p>Pemeriksaan berkala mengenai kesehatan hewan kesayangan anda.</p><br>
-                    <a href="#box-reservasi">Cek Jadwal Dokter<img src="assets/image/calendar.png"
-                            alt="calendar"></a><br></br>
-                </div>
-                <div class="box-clinic">
-                    <i class='bx bx-injection'></i>
-                    <h4>Vaksin</h4>
-                    <p>Mencegah terjadinya kesakitan dan kematian pada hewan kesayangan anda.</p><br>
-                    <a href="#box-reservasi">Cek Jadwal Dokter<img src="assets/image/calendar.png"
-                            alt="calendar"></a><br></br>
-                </div>
-                <div class="box-clinic">
-                    <i class='bx bx-dna'></i>
-                    <h4>Steril</h4>
-                    <p>Proses sterilisasi terhadap hewan kesayangan anda.</p><br>
-                    <a href="#box-reservasi">Cek Jadwal Dokter<img src="assets/image/calendar.png"
-                            alt="calendar"></a><br></br>
+                <div class="tile">
+                    <input type="checkbox" name="dog" id="dog">
+                    <label for="dog">
+                        <i class='bx bxs-dog'></i>
+                        <h6>DoG</h6>
+                    </label>
                 </div>
             </div>
-            <br></br>
-            <div class="box-reservasi" id="box-reservasi">
-                <h3>Reservasi Pelayanan Kami Sekarang</h3><br>
-                <p>Pet Clinic adalah bagian integral dari suatu organisasi sosial dan kesehatan dengan fungsi
-                    menyediakan pelayanan paripurna (komprehensif) terhadap hewan kesayangan.</p><br></br>
-                <input class="datetime" type="button" value="Pilih Jadwal" placeholder="Pilih Jadwal">
-                <input class="reservasi" type="button" value="Reservasi">
-            </div>
 
+            <div class="content-right">
+
+            </div>
         </div>
     </section>
 
@@ -99,7 +85,7 @@
                 <ul>
                     <li><a href="clinic.html">Clinic</a></li>
                     <li><a href="grooming.html">Grooming</a></li>
-                    <li><a href="supplies.html">Supplies</a></li>
+                    <li><a href="#">Supplies</a></li>
                     <li><a href="#">Training</a></li>
                     <li><a href="#">Hotel</a></li>
                 </ul>

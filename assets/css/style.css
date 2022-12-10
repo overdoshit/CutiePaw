@@ -50,6 +50,9 @@ section {
 }
 
 .nav-wrapper .logo span {
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
     color: var(--second-color);
 }
 
