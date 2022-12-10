@@ -1,21 +1,62 @@
+section {
+    margin-top: 50px;
+}
+
+/* Clinic Start */
+
 .grooming .grooming-wrapper {
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
+    text-align: center;
 }
 
-.grooming-wrapper .content-left {
-    margin: auto;
+.grooming-wrapper .title {
+    font-size: 1.25rem;
+    font-family: var(--content-font);
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+.grooming-wrapper .heading {
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.grooming-wrapper .form1 {
+    margin-top: 130px;
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+.grooming-wrapper .form1 span {
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.animaltype {
+    width: 100vmin;
+    height: 100vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.content-left .tile {
-    /* border: 1px solid black; */
-    width: 150px;
-    height: 150px;
-    margin: 15px;
+.tile {
+    height: 200px;
+    width: 170px;
+    position: relative;
 }
 
 input[type="checkbox"] {
@@ -23,15 +64,70 @@ input[type="checkbox"] {
     position: relative;
     height: 100%;
     width: 100%;
-    background-color: coral;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.400);
+    background-color: #ffffff;
+    border-radius: 10px;
     cursor: pointer;
-    border-radius: 10%;
+    border: 3px solid transparent;
     outline: none;
+    box-shadow: 15px 15px 25px rgba(2, 28, 53, 0.05);
 }
 
-input[type="checkbox"]::after {
+input[type="checkbox"]:after {
     position: absolute;
-    content: "";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f111";
+    font-size: 22px;
+    top: 10px;
+    left: 10px;
+    color: #e2e6f3;
+}
 
+input[type="checkbox"]:hover {
+    transform: scale(1.08);
+}
+
+input[type="checkbox"]:checked {
+    border: 3px solid #478bfb;
+}
+
+input[type="checkbox"]:checked:after {
+    font-weight: 900;
+    content: "\f058";
+    color: #478bfb;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+
+label .fa-solid {
+    font-size: 60px;
+    color: #2c2c51;
+}
+
+input[type="checkbox"]:checked+label .fa-solid {
+    animation: grow 0.5s;
+}
+
+@keyframes grow {
+    50% {
+        font-size: 80px;
+    }
+}
+
+label h6 {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #7b7b93;
 }

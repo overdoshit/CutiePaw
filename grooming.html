@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/grooming.css">
+    <link rel="stylesheet" href="/CutiePaw/assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/grooming.css"> -->
     <link rel="shortcut icon" href="assets/image/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <title>CutiePaw - Pet Shop</title>
+    <!-- Stylesheet DELETE-->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -37,29 +41,30 @@
 
     <section class="grooming" id="grooming">
         <div class="container grooming-wrapper">
-            <div class="content-left">
-                <div class="tile">
-                    <input type="checkbox" name="cat" id="cat">
-                    <label for="cat">
-                        <i class='bx bxs-cat'></i>
-                        <h6>Cat</h6>
-                    </label>
-                </div>
-
-                <div class="tile">
-                    <input type="checkbox" name="dog" id="dog">
-                    <label for="dog">
-                        <i class='bx bxs-dog'></i>
-                        <h6>DoG</h6>
-                    </label>
-                </div>
-            </div>
-
-            <div class="content-right">
-
-            </div>
+            <h3 class="title">Our Services</h3>
+            <h2 class="heading">What you need ?</h2>
+            <h4 class="form1">Animal <span>Type</span></h4><br></br>
         </div>
     </section>
+
+    <section class="animaltype">
+        <div class="tile">
+            <input type="checkbox" name="animal" id="animal1">
+            <label for="animal1">
+                <i class="fa-solid fa-cat"></i>
+                <h6>Cat</h6>
+            </label>
+        </div>
+        <div class="tile">
+            <input type="checkbox" name="animal" id="animal2">
+            <label for="animal2">
+                <i class="fa-solid fa-dog"></i>
+                <h6>Dog</h6>
+            </label>
+        </div>
+    </section>
+
+    <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
     <footer class="footer" id="footer">
         <div class="container footer-wrapper">
@@ -85,9 +90,9 @@
                 <ul>
                     <li><a href="clinic.html">Clinic</a></li>
                     <li><a href="grooming.html">Grooming</a></li>
-                    <li><a href="#">Supplies</a></li>
-                    <li><a href="#">Training</a></li>
-                    <li><a href="#">Hotel</a></li>
+                    <li><a href="supplies.html">Supplies</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="hotel.html">Hotel</a></li>
                 </ul>
             </div>
 
@@ -104,10 +109,6 @@
 
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
