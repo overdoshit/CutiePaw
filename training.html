@@ -41,7 +41,9 @@
             <h3 class="title">Our Services</h3>
             <h2 class="heading">What you need ?</h2>
 
-            <form class="training-form">
+            <form class="training-form" action="output.php" method="POST" onsubmit="alert('Pet Training Booked')">
+                <input type="hidden" name="layanan" value="Training">
+                <input type="hidden" name="datetime-check-out" value="">
                 <h4 class="form-title 1">Pet <span>Owner</span></h4>
                 <h4>Owner <span>Name</span></h4>
                 <input type="text" id="owner" name="owner" placeholder="Enter Your Full Name" required>
@@ -57,7 +59,7 @@
 
                 <section class="animaltype">
                     <div class="tile">
-                        <input type="radio" name="animal" id="animal1" value="Cat">
+                        <input type="radio" name="animal" id="animal1" value="Cat" checked>
                         <label for="animal1">
                             <i class="fa-solid fa-cat"></i>
                             <h6>Cat</h6>
@@ -81,27 +83,26 @@
                 <h4>Pet <span>Sex</span></h4>
                 <div class="sex">
                     <input type="radio" id="male" value="Male" name="sex" checked><label for="male">Male</label><input
-                        type="radio" id="Female" value="Female" name="sex"><label for="Female">Female</label></label>
+                        type="radio" id="female" value="Female" name="sex"><label for="female">Female</label></label>
                 </div>
                 <h4>Pet <span>Training</span></h4>
-                <div class="train">
-                    <input type="radio" id="guard" value="Guard" name="train" checked><label
-                        for="guard">Guard</label><input type="radio" id="fashion" value="Fashion" name="train"><label
+                <div class="service">
+                    <input type="radio" id="guard" value="Guard" name="service" checked><label
+                        for="guard">Guard</label><input type="radio" id="fashion" value="Fashion" name="service"><label
                         for="fashion">Fashion</label></label>
                 </div>
-                <h4>Services</h4>
-                <div class="service">
-                    <input type="radio" id="pickedup" value="PickedUp" name="service" checked><label
-                        for="pickedup">Picked-Up</label><input type="radio" id="cutiepaw" value="CutiePaw"
-                        name="service"><label for="cutiepaw">GoTo CutiePaw</label></label>
+                <h4>Delivery</h4>
+                <div class="delivery">
+                    <input type="radio" id="pickedup" value="Picked-Up" name="delivery" checked><label
+                        for="pickedup">Picked-Up</label><input type="radio" id="cutiepaw" value="GoTo CutiePaw"
+                        name="delivery"><label for="cutiepaw">GoTo CutiePaw</label></label>
                 </div>
                 <h4>Date <span>Time</span></h4>
-                <input class="datetime" type="button" id="datetime" name="datetime" placeholder="Select Date Time"
-                    required>
+                <input class="datetime" type="button" id="datetime" name="datetime-check-in"
+                    placeholder="Select Date Time" required>
                 <br>
 
-                <input type="submit" class="booking" id="booking" value="Booking"
-                    onclick="alert('Pet Training Booked')">
+                <input type="submit" class="booking" id="booking" value="Booking">
             </form>
         </div>
     </section>

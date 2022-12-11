@@ -38,8 +38,9 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 flatpickr("input[class=datetime]", {
+    allowInput: true,
     enableTime: true,
-    dateFormat: "Y-m-d h:i",
+    dateFormat: "D j M, Y (h:i K)",
     altInput: true,
     altFormat: "D j M, Y (h:i K)",
     disableMobile: "true",

@@ -41,7 +41,8 @@
             <h3 class="title">Our Services</h3>
             <h2 class="heading">What you need ?</h2>
 
-            <form class="hotel-form">
+            <form class="hotel-form" action="output.php" method="POST" onsubmit="alert('Pet Hotel Booked')">
+                <input type="hidden" name="layanan" value="Hotel">
                 <h4 class="form-title 1">Pet <span>Owner</span></h4>
                 <h4>Owner <span>Name</span></h4>
                 <input type="text" id="owner" name="owner" placeholder="Enter Your Full Name" required>
@@ -57,7 +58,7 @@
 
                 <section class="animaltype">
                     <div class="tile">
-                        <input type="radio" name="animal" id="cat" value="Cat">
+                        <input type="radio" name="animal" id="cat" value="Cat" checked>
                         <label for="cat">
                             <i class="fa-solid fa-cat"></i>
                             <h6>Cat</h6>
@@ -89,6 +90,12 @@
                         for="cargo">Cargo</label><input type="radio" id="room" value="Room" name="service"><label
                         for="room">Room</label></label>
                 </div>
+                <h4>Delivery</h4>
+                <div class="delivery">
+                    <input type="radio" id="pickedup" value="Picked-Up" name="delivery" checked><label
+                        for="pickedup">Picked-Up</label><input type="radio" id="cutiepaw" value="GoTo CutiePaw"
+                        name="delivery"><label for="cutiepaw">GoTo CutiePaw</label></label>
+                </div>
                 <h4>Check <span>IN</span></h4>
                 <input class="datetime" type="button" id="check-in" name="datetime-check-in"
                     placeholder="Select Date Time" required>
@@ -97,7 +104,7 @@
                     placeholder="Select Date Time" required>
                 <br>
 
-                <input type="submit" class="booking" id="booking" value="Booking" onclick="alert('Pet Hotel Booked')">
+                <input type="submit" class="booking" id="booking" value="Booking">
             </form>
         </div>
     </section>
