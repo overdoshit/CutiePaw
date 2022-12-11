@@ -11,12 +11,12 @@
 <body>
 
     <?php
-    $owner = $_POST["owner"];
+    $owner = strtoupper($_POST["owner"]);
     $address = $_POST["address"];
     $phone = $_POST["phone"];
     $email = $_POST["email"];
     $animal = $_POST["animal"];
-    $pet = $_POST["pet"];
+    $pet = strtoupper($_POST["pet"]);
     $age = $_POST["age"];
     $sex = $_POST["sex"];
     $layanan =  $_POST["layanan"];
@@ -31,7 +31,7 @@
     }
     ?>
 
-    <table border="1" cellpadding="8" class="table">
+    <table border="1" cellpadding="8" class="table" style="margin: 0 auto;">
         <tr>
             <th colspan="2">PET OWNER DATA</th>
         </tr>
@@ -96,11 +96,12 @@
             <td>Datetime Check OUT</td>
             <td><?php echo $datetime_check_out; ?></td>
         </tr>
-
+        <tr>
+            <th colspan="2">
+                <a href="<?= $previous ?>">Back</a>
+            </th>
+        </tr>
     </table>
-    <br></br>
-
-    <button><a href="<?= $previous ?>">Back</a></button>
 </body>
 
 </html>
