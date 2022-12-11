@@ -40,6 +40,72 @@
         <div class="container hotel-wrapper">
             <h3 class="title">Our Services</h3>
             <h2 class="heading">What you need ?</h2>
+
+            <form class="hotel-form">
+                <h4 class="form-title 1">Pet <span>Owner</span></h4>
+                <h4>Owner <span>Name</span></h4>
+                <input type="text" id="owner" name="owner" placeholder="Enter Your Full Name" required>
+                <h4>Address</span></h4>
+                <input type="text" id="address" name="address" placeholder="Enter Your Address" required>
+                <h4>Phone <span>Number</span></h4>
+                <input type="text" id="phone" name="phone" placeholder="Enter Your Number Phone" required>
+                <h4>E-mail <span>Address</span></h4>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
+
+                <h4 class="form-title 2">Pet <span>Data</span></h4>
+                <h4 class="form-title1">Animal <span>Type</span></h4><br></br>
+
+                <section class="animaltype">
+                    <div class="tile">
+                        <input type="radio" name="animal" id="cat" value="Cat">
+                        <label for="cat">
+                            <i class="fa-solid fa-cat"></i>
+                            <h6>Cat</h6>
+                        </label>
+                    </div>
+                    <div class="tile">
+                        <input type="radio" name="animal" id="dog" value="Dog">
+                        <label for="dog">
+                            <i class="fa-solid fa-dog"></i>
+                            <h6>Dog</h6>
+                        </label>
+                    </div>
+                </section>
+
+                <br></br><br></br><br></br><br></br><br></br>
+
+                <h4>Pet <span>Name</span></h4>
+                <input type="text" id="pet" name="pet" placeholder="Enter Your Pet Name" required>
+                <h4>Pet <span>Age</span></h4>
+                <input type="text" id="age" name="age" placeholder="Enter Your Pet Age" required>
+                <h4>Pet <span>Sex</span></h4>
+                <div class="sex">
+                    <input type="radio" id="male" value="Male" name="sex" checked><label for="male">Male</label><input
+                        type="radio" id="Female" value="Female" name="sex"><label for="Female">Female</label></label>
+                </div>
+                <h4>Room <span>Service</span></h4>
+                <div class="service">
+                    <input type="radio" id="cargo" value="Cargo" name="service" checked><label
+                        for="cargo">Cargo</label><input type="radio" id="room" value="Room" name="service"><label
+                        for="room">Room</label></label>
+                </div>
+                <h4>Check <span>IN</span></h4>
+                <input class="datetime" type="button" id="check-in" value="datetime-check-in"
+                    placeholder="Select Date Time" required>
+                <h4>Check <span>OUT</span></h4>
+                <input class="datetime" type="button" id="check-out" value="datetime-check-in"
+                    placeholder="Select Date Time" required>
+                <br>
+
+                <input type="submit" class="booking" id="booking" value="Booking" onclick="alert('Pet Hotel Booked')">
+            </form>
+        </div>
+    </section>
+
+    <!-- <section class="hotel" id="hotel">
+        <div class="container hotel-wrapper">
+            <h3 class="title">Our Services</h3>
+            <h2 class="heading">What you need ?</h2>
             <h4 class="form-title1">Animal <span>Type</span></h4><br></br>
 
             <section class="animaltype">
@@ -60,8 +126,10 @@
             </section>
 
             <form class="hotel-form">
-                <h4>Name</h4>
-                <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required>
+                <h4>Owner <span>Name</span></h4>
+                <input type="text" id="owner" name="owner" placeholder="Enter Your Full Name" required>
+                <h4>Pet <span>Name</span></h4>
+                <input type="text" id="pet" name="pet" placeholder="Enter Your Pet Name" required>
                 <h4>Phone <span>Number</span></h4>
                 <input type="text" id="phone" name="phone" placeholder="Enter Your Number Phone" required>
                 <h4>E-mail <span>Address</span></h4>
@@ -84,7 +152,7 @@
                 <input type="submit" class="booking" id="booking" value="Booking" onclick="alert('Pet Hotel Booked')">
             </form>
         </div>
-    </section>
+    </section> -->
 
     <footer class="footer" id="footer">
         <div class="container footer-wrapper">

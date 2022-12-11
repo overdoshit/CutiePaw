@@ -40,45 +40,60 @@
         <div class="container grooming-wrapper">
             <h3 class="title">Our Services</h3>
             <h2 class="heading">What you need ?</h2>
-            <h4 class="form-title1">Animal <span>Type</span></h4><br></br>
-
-            <section class="animaltype">
-                <div class="tile">
-                    <input type="radio" name="animal" id="animal1">
-                    <label for="animal1">
-                        <i class="fa-solid fa-cat"></i>
-                        <h6>Cat</h6>
-                    </label>
-                </div>
-                <div class="tile">
-                    <input type="radio" name="animal" id="animal2">
-                    <label for="animal2">
-                        <i class="fa-solid fa-dog"></i>
-                        <h6>Dog</h6>
-                    </label>
-                </div>
-            </section>
 
             <form class="grooming-form">
-                <h4>Name</h4>
-                <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required>
+                <h4 class="form-title 1">Pet <span>Owner</span></h4>
+                <h4>Owner <span>Name</span></h4>
+                <input type="text" id="owner" name="owner" placeholder="Enter Your Full Name" required>
+                <h4>Address</span></h4>
+                <input type="text" id="address" name="address" placeholder="Enter Your Address" required>
                 <h4>Phone <span>Number</span></h4>
                 <input type="text" id="phone" name="phone" placeholder="Enter Your Number Phone" required>
                 <h4>E-mail <span>Address</span></h4>
                 <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
-                <h4>Services</h4>
 
-                <div class="service">
-                    <input type="radio" id="cutiepaw" name="service" checked><label for="cutiepaw">GoTo
-                        CutiePaw</label><input type="radio" id="pickedup" name="service"><label
-                        for="pickedup">Picked-Up</label></label>
+                <h4 class="form-title 2">Pet <span>Data</span></h4>
+                <h4 class="form-title1">Animal <span>Type</span></h4><br></br>
+
+                <section class="animaltype">
+                    <div class="tile">
+                        <input type="radio" name="animal" id="animal1" value="Cat">
+                        <label for="animal1">
+                            <i class="fa-solid fa-cat"></i>
+                            <h6>Cat</h6>
+                        </label>
+                    </div>
+                    <div class="tile">
+                        <input type="radio" name="animal" id="animal2" value="Dog">
+                        <label for="animal2">
+                            <i class="fa-solid fa-dog"></i>
+                            <h6>Dog</h6>
+                        </label>
+                    </div>
+                </section>
+
+                <br></br><br></br><br></br><br></br><br></br>
+
+                <h4>Pet <span>Name</span></h4>
+                <input type="text" id="pet" name="pet" placeholder="Enter Your Pet Name" required>
+                <h4>Pet <span>Age</span></h4>
+                <input type="text" id="age" name="age" placeholder="Enter Your Pet Age" required>
+                <h4>Pet <span>Sex</span></h4>
+                <div class="sex">
+                    <input type="radio" id="male" value="Male" name="sex" checked><label for="male">Male</label><input
+                        type="radio" id="Female" value="Female" name="sex"><label for="Female">Female</label></label>
                 </div>
-
-                <br>
+                <h4>Services</h4>
+                <div class="service">
+                    <input type="radio" id="pickedup" value="PickedUp" name="service" checked><label
+                        for="pickedup">Picked-Up</label><input type="radio" id="cutiepaw" value="CutiePaw"
+                        name="service"><label for="cutiepaw">GoTo CutiePaw</label></label>
+                </div>
                 <h4>Date <span>Time</span></h4>
-                <input class="datetime" type="button" id="datetime" value="Select Date" placeholder="Select Date"
+                <input class="datetime" type="button" id="datetime" value="datetime" placeholder="Select Date Time"
                     required>
                 <br>
+
                 <input type="submit" class="booking" id="booking" value="Booking"
                     onclick="alert('Pet Grooming Booked')">
             </form>

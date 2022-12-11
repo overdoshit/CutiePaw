@@ -24,16 +24,16 @@ section {
     color: var(--second-color);
 }
 
-.hotel-wrapper .form-title1 {
-    margin-top: 100px;
-    font-size: 2rem;
+.hotel-wrapper .form-title {
+    margin-top: 50px;
+    font-size: 3rem;
     font-family: var(--heading-font);
     font-weight: 400;
     color: var(--main-color);
 }
 
-.hotel-wrapper .form-title1 span {
-    font-size: 2rem;
+.hotel-wrapper .form-title span {
+    font-size: 3rem;
     font-family: var(--heading-font);
     font-weight: 400;
     color: var(--second-color);
@@ -131,9 +131,6 @@ section {
     color: black;
 }
 
-.hotel-wrapper .hotel-form {
-    margin-top: 200px;
-}
 
 .hotel-form h4 {
     margin-top: 30px;
@@ -167,25 +164,34 @@ section {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.hotel-form #name {
+.hotel-form #owner,
+.hotel-form #pet {
     text-transform: uppercase;
 }
 
-.hotel-form #name:placeholder-shown {
+.hotel-form #owner:placeholder-shown,
+.hotel-form #pet:placeholder-shown {
     text-transform: none;
 }
 
+.sex,
 .service {
     margin: auto;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin: 10px;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
+.sex input[type=radio],
 .service input[type=radio] {
     position: absolute;
     visibility: hidden;
     display: none;
 }
 
+.sex label,
 .service label {
     font-size: 1rem;
     font-family: var(--content-font);
@@ -198,20 +204,10 @@ section {
     transition: 0.3s ease-in-out;
 }
 
+.sex input[type=radio]:checked+label,
 .service input[type=radio]:checked+label {
     color: white;
     background: #478BFB;
-}
-
-.service label+input[type=radio]+label {
-    border-left: solid 3px #478BFB;
-}
-
-.service {
-    display: inline-block;
-    margin: 20px;
-    border-radius: 30px;
-    overflow: hidden;
 }
 
 .hotel-form .booking {

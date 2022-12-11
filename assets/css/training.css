@@ -2,29 +2,29 @@ section {
     margin-top: 50px;
 }
 
-/* Grooming Start */
+/* Training Start */
 
-.grooming .grooming-wrapper {
+.training .training-wrapper {
     margin: auto;
     align-items: center;
     text-align: center;
 }
 
-.grooming-wrapper .title {
+.training-wrapper .title {
     font-size: 1.25rem;
     font-family: var(--content-font);
     font-weight: 400;
     color: var(--main-color);
 }
 
-.grooming-wrapper .heading {
+.training-wrapper .heading {
     font-size: 2.5rem;
     font-family: var(--heading-font);
     font-weight: 400;
     color: var(--second-color);
 }
 
-.grooming-wrapper .form-title {
+.training-wrapper .form-title {
     margin-top: 50px;
     font-size: 3rem;
     font-family: var(--heading-font);
@@ -32,7 +32,7 @@ section {
     color: var(--main-color);
 }
 
-.grooming-wrapper .form-title span {
+.training-wrapper .form-title span {
     font-size: 3rem;
     font-family: var(--heading-font);
     font-weight: 400;
@@ -132,7 +132,7 @@ section {
 }
 
 
-.grooming-form h4 {
+.training-form h4 {
     margin-top: 30px;
     font-size: 2rem;
     font-family: var(--heading-font);
@@ -140,16 +140,16 @@ section {
     color: var(--main-color);
 }
 
-.grooming-form h4 span {
+.training-form h4 span {
     font-size: 2rem;
     font-family: var(--heading-font);
     font-weight: 400;
     color: var(--second-color);
 }
 
-.grooming-form input[type="text"],
-.grooming-form input[type="email"],
-.grooming-form input[type="datetime"] {
+.training-form input[type="text"],
+.training-form input[type="email"],
+.training-form input[type="datetime"] {
     margin-top: 5px;
     padding: 10px;
     width: 350px;
@@ -164,17 +164,18 @@ section {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.grooming-form #owner,
-.grooming-form #pet {
+.training-form #owner,
+.training-form #pet {
     text-transform: uppercase;
 }
 
-.grooming-form #owner:placeholder-shown,
-.grooming-form #pet:placeholder-shown {
+.training-form #owner:placeholder-shown,
+.training-form #pet:placeholder-shown {
     text-transform: none;
 }
 
 .sex,
+.train,
 .service {
     margin: auto;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
@@ -185,6 +186,7 @@ section {
 }
 
 .sex input[type=radio],
+.train input[type=radio],
 .service input[type=radio] {
     position: absolute;
     visibility: hidden;
@@ -192,6 +194,7 @@ section {
 }
 
 .sex label,
+.train label,
 .service label {
     font-size: 1rem;
     font-family: var(--content-font);
@@ -205,12 +208,13 @@ section {
 }
 
 .sex input[type=radio]:checked+label,
+.train input[type=radio]:checked+label,
 .service input[type=radio]:checked+label {
     color: white;
     background: #478BFB;
 }
 
-.grooming-form .booking {
+.training-form .booking {
     margin-top: 40px;
     background-color: var(--main-color);
     color: black;
@@ -226,13 +230,13 @@ section {
     transition: 0.3s ease-in-out;
 }
 
-.grooming-form .booking:hover {
+.training-form .booking:hover {
     background-color: #E6C30D;
     transition: 0.3s ease-in-out;
 }
 
-.grooming-form .booking:active {
+.training-form .booking:active {
     transform: translateY(4px);
 }
 
-/* Grooming End */
+/* Training End */
