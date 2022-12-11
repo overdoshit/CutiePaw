@@ -68,8 +68,10 @@
                 <h3>Reservasi Pelayanan Kami Sekarang</h3><br>
                 <p>Pet Clinic adalah bagian integral dari suatu organisasi sosial dan kesehatan dengan fungsi
                     menyediakan pelayanan paripurna (komprehensif) terhadap hewan kesayangan.</p><br></br>
-                <input class="datetime" type="button" name="datetime" placeholder="Pilih Jadwal">
-                <input class="reservasi" type="button" value="Reservasi" onclick="alert('Pet Clinic Booked')">
+                <form class="form" onsubmit="alert('Pet Clinic Booked')">
+                    <input class="datetime" type="button" name="datetime" placeholder="Pilih Jadwal" required>
+                    <input class="reservasi" type="submit" id="reservasi" value="Reservasi">
+                </form>
             </div>
 
         </div>
